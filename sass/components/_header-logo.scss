@@ -1,0 +1,22 @@
+.header-logo {
+    color: var(--accent-color);
+
+    text-decoration: none;
+    font-family: Raleway, cursive;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+
+    display: flex;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    margin-right: 93px;
+}
+.header-logo-two {
+    color: var(--logo-color);
+    
+    font-family: Raleway, cursive;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+}

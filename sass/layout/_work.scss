@@ -11,14 +11,9 @@
 .work-top-text {
     color: var(--primary-white-color);
     text-transform: uppercase;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.17;
-    letter-spacing: 0.03;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include font (14px, 1.17, 0.03em, 700);
+    @include flex (flex, center, center);
     height: 70px;
     background-color: var(--work-top-text);
     

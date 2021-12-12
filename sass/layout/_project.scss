@@ -14,10 +14,31 @@
     box-shadow: 1px 4px 6px 0px #00000029, 
     0px 4px 4px 0px #0000000F,
     0px 1px 1px 0px #0000001F; 
-    .project-top-text {
-        transform: translateY(0);
-        }
     }
+}
+.project-top-text {
+    position: absolute;
+    color: var(--primary-white-color);
+
+    @include font (18px, 1.55, 0.03em);
+    padding-left: 24px;
+    padding-top: 63px;
+    padding-right: 24px;
+    padding-bottom: 63px;
+    background-color: var(--top-text);
+    width: 370px;
+    height: 294px;
+    transform: translateY(100%);
+    transition: transform var(--animation);
+    overflow: auto;
+
+    position: absolute;
+    top: 0;
+    left: 0;  
+    .project-link:hover &,
+    .project-link:focus {
+        transform: translateY(0);
+    } 
 }
 .project-item {
     margin-right: 30px;
@@ -32,45 +53,17 @@
 }
 .project-tittle {
     color: var(--tittle-text-color);
-
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
+    @include font (18px, 2, 0.06em, 700);
 }
 .project-text {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.87;
-
     font-family: Raleway, cursive ;
-    letter-spacing: 0.03em;
+    @include font (16px, 1.87, 0.03em, 400);
+    
     color: var(--primary-text-color);
 }
 .project-item-wrap {
     position: relative;
     overflow: hidden;  
-}
-.project-top-text {
-    position: absolute;
-    color: var(--primary-white-color);
-    font-size: 18px;
-    line-height: 1.55;
-    letter-spacing: 0.03em;
-    padding-left: 24px;
-    padding-top: 63px;
-    padding-right: 24px;
-    padding-bottom: 63px;
-    background-color: var(--top-text);
-    width: 370px;
-    height: 294px;
-    transform: translateY(100%);
-    transition: transform var(--animation);
-    overflow: auto;
-
-    position: absolute;
-    top: 0;
-    left: 0;   
 }
 .portfolio-card {
     padding-top: 20px;

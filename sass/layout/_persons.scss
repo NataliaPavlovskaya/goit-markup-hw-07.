@@ -1,9 +1,7 @@
 .persons-tittle {
     color: var(--tittle-text-color);
 
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
+    @include font (14px, 1.14, 0.03em, 700);
     text-transform: uppercase;
 
     margin-bottom: 10px;  
@@ -25,9 +23,7 @@
     background: var(--section-command-color);
     border-radius: 4px;
     margin-bottom: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex (flex, center, center);
 }
 .persons-social-item{
    & + & {

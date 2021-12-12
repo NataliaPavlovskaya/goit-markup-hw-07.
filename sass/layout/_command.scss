@@ -13,15 +13,18 @@
 .command-people {
     color: var(--tittle-text-color);
 
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.8;
+    @include font (16px, 1.8, 0.03em, 500);
+
+    // font-weight: 500;
+    // font-size: 16px;
+    // line-height: 1.8;
     text-align: center;
     margin-bottom: 10px;
 }
 .command-special {
-    font-size: 16px;
-    line-height: 1.8;
+    @include font (16px, 1.8, 0.03em, 400);
+    // font-size: 16px;
+    // line-height: 1.8;
     text-align: center;
 
     margin-bottom: 16px;
@@ -48,17 +51,13 @@
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex (flex, center, center);
+    
     background-color: var(--primary-white-color);
     transition: background-color var(--animation), color var(--animation);
     &:hover,
     &:focus{
         background-color: var(--accent-color);
-        .command-social-icon {
-            fill: var(--primary-white-color);
-        }
     }
 }
 .command-social-item {
@@ -68,4 +67,8 @@
 } 
 .command-social-icon {
     fill: currentColor;
+    .command-social-link:hover &,
+    .command-social-link:focus & {
+        fill: var(--primary-white-color)
+    }
 }

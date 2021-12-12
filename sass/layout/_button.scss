@@ -1,6 +1,5 @@
 .button {
-    display: flex;
-    justify-content: center;
+    @include flex (flex, center, center);
     margin-bottom: 50px;
 }
 .btn-item {
@@ -11,9 +10,7 @@
     background-color: var(--section-command-color);
 
     font-family: inherit;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.6;
+    @include font (16px, 1.16, 0.03em, 500);
     cursor: pointer;
     padding: 6px 22px;
     display: inline-block;
@@ -28,10 +25,7 @@
         color: var(--primary-white-color);
     
         font-family: inherit;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 1.6;
-    
+        @include font (16px, 1.16, 0.03em, 500);
         display: inline-block;
         padding: 6px 22px;
         border: 1px solid transparent;
@@ -48,10 +42,7 @@
     color: var(--primary-white-color);
 
     font-family: inherit;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.6;
-
+    @include font (16px, 1.16, 0.03em, 500);
     display: inline-block;
     padding: 6px 22px;
     border: 1px solid transparent;

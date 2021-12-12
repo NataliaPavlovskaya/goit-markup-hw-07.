@@ -3,6 +3,13 @@
     padding-top: 60px;
     padding-bottom: 60px;
 }
+.footer-thumb{
+    margin-right: 60px;
+}
+.footer>.container{
+    display: flex;
+    align-items: baseline;
+}
 .address-list {
     color: var(--primary-white-color);
 
@@ -11,7 +18,13 @@
 
     margin-bottom: 0px;
 }
-.address-item-contact {
+.address-list__item {
+    margin-bottom: 9px;
+    &:last-child {
+        margin-bottom: 0px;
+    }
+}
+.address-list__contact {
     color: var(--address-contact-color);
 
     text-decoration: none;
@@ -21,24 +34,10 @@
         color: var(--accent-color);
     }
 }
-.address-item {
-    margin-bottom: 9px;
-    &:last-child {
-        margin-bottom: 0px;
-    }
-}
-
-.footer-thumb{
-    margin-right: 60px;
-}
-.footer>.container{
-    display: flex;
-    align-items: baseline;
-}
 .footer-icon{
     margin-right: auto;
 }
-.footer-icon-tittle{
+.footer-icon__tittle{
     margin-bottom: 20px;
     
     text-transform: uppercase;
@@ -47,14 +46,17 @@
     font-family: Roboto, sans-serif;
     @include font (14px, 1.14, 0.03em, 700);
 }
-.footer-social-list{
+.footer-socials{
     @include flex (flex, center, center);
 }
-.footer-social-item {
+.footer-socials__item {
     width: 44px;
     height: 44px;
+    & + & {
+        margin-left: 10px;
+        }
 }
-.footer-social-link{
+.footer-socials__link{
     width: 100%;
     height: 100%;
     border-radius: 50%;
@@ -68,15 +70,10 @@
     background-color: var(--accent-color);
     }
 }
-.footer-social-item {
-    & + & {
-    margin-left: 10px;
-    }
-}
-.footer-social-icon{
+.footer-socials__icon{
     fill: var(--primary-white-color);
-    .footer-social-link:hover &,
-    .footer-social-link:focus &{
+    .footer-socials__link:hover &,
+    .footer-socials__link:focus &{
         fill: var(--primary-white-color);
     }
 }
@@ -87,11 +84,7 @@
     width: 570px;
     height: 86px;
 }
-.footer-block {
-    display: flex;
-    justify-content: space-between;
-}
-.footer-form-tittle {
+.footer-form__tittle {
     margin-bottom: 20px;
     
     text-transform: uppercase;
@@ -100,7 +93,12 @@
     font-family: Roboto, sans-serif;
     @include font (14px, 1.14, 0.03em, 700);
 }
-.footer-form-email {
+.footer-form__block {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-form__email {
     width: 358px;
     height: 50px;
 
@@ -128,7 +126,7 @@
     border: 1px solid var(--accent-color);
     }
 }
-.footer-form-btn{
+.footer-form__btn{
     width: 200px;
     height: 50px; 
     background-color: var(--accent-color); 
@@ -149,6 +147,6 @@
     background: var(--footer-form-btn-hover);
     }
 }
-.footer-form-icon{
+.footer-form__icon{
     margin-left: 10px;
 }

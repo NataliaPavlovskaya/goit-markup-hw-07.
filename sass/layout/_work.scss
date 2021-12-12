@@ -1,14 +1,14 @@
 .section-work {
     padding-bottom: 94px;
 }
-.work-item {
-    width: 370px;
-    position: relative;
-}
 .work-list {
     display: flex;
 }
-.work-top-text {
+.work-list__item {
+    width: 370px;
+    position: relative;
+}
+.work-list__top-text {
     color: var(--primary-white-color);
     text-transform: uppercase;
 

@@ -336,7 +336,7 @@ textarea {
   padding-bottom: 94px;
 }
 
-.work-item {
+.work-list__item {
   width: 370px;
   position: relative;
 }
@@ -362,22 +362,22 @@ textarea {
   width: 100%;
 }
 
-.command-list {
-  display: flex;
-}
-
 .section-command {
   background: var(--section-command-color);
 }
 
-.command-item {
+.command-list {
+  display: flex;
+}
+
+.command-list__item {
   width: 270px;
   background-color: var(--portfolio-card-border-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
-.command-people {
+.command-list__people {
   color: var(--tittle-text-color);
   font-size: 16px;
   line-height: 1.8;
@@ -387,7 +387,7 @@ textarea {
   margin-bottom: 10px;
 }
 
-.command-special {
+.command-list__special {
   font-size: 16px;
   line-height: 1.8;
   letter-spacing: 0.03em;
@@ -396,7 +396,7 @@ textarea {
   margin-bottom: 16px;
 }
 
-.command-card {
+.command-list__card {
   padding-top: 30px;
   padding-bottom: 30px;
   padding-left: 32px;
@@ -405,17 +405,21 @@ textarea {
   background-color: var(--primary-white-color);
 }
 
-.command-social-list {
+.socials {
   display: flex;
   justify-content: center;
 }
 
-.command-social-item {
+.socials__item {
   width: 44px;
   height: 44px;
 }
 
-.command-social-link {
+.socials__item + .socials__item {
+  margin-left: 10px;
+}
+
+.socials__link {
   color: var(--icon-color);
   width: 100%;
   height: 100%;
@@ -427,20 +431,16 @@ textarea {
   transition: background-color var(--animation), color var(--animation);
 }
 
-.command-social-link:hover, .command-social-link:focus {
+.socials__link:hover, .socials__link:focus {
   background-color: var(--accent-color);
 }
 
-.command-social-item + .command-social-item {
-  margin-left: 10px;
-}
-
-.command-social-icon {
+.socials__icon {
   fill: currentColor;
 }
 
-.command-social-link:hover .command-social-icon,
-.command-social-link:focus .command-social-icon {
+.socials__link:hover .socials__icon,
+.socials__link:focus .socials__icon {
   fill: var(--primary-white-color);
 }
 
@@ -1024,10 +1024,11 @@ textarea {
   border: 1px solid var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   font-family: Roboto, sans-serif;
-  font-size: 66px;
+  font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
   font-weight: 700;
+  text-align: center;
   transition: background var(--animation);
 }
 

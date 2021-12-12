@@ -88,9 +88,10 @@ textarea {
 }
 
 .section-tittle {
-  font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
+  letter-spacing: 0.03em;
+  font-weight: 700;
   text-align: center;
   margin-bottom: 50px;
   color: var(--tittle-text-color);
@@ -105,9 +106,10 @@ textarea {
   color: var(--accent-color);
   text-decoration: none;
   font-family: Raleway, cursive;
-  font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
+  letter-spacing: 0.03em;
+  font-weight: 700;
   display: flex;
   padding-top: 24px;
   padding-bottom: 24px;
@@ -117,28 +119,31 @@ textarea {
 .header-logo-two {
   color: var(--logo-color);
   font-family: Raleway, cursive;
-  font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
+  letter-spacing: 0.03em;
+  font-weight: 700;
 }
 
 .logo-footer {
-  color: var(--accent-color);
-  text-decoration: none;
   font-family: Raleway, cursive;
-  font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
+  letter-spacing: 0.03em;
+  font-weight: 700;
+  text-decoration: none;
   margin-bottom: 20px;
   display: block;
+  color: var(--accent-color);
 }
 
 .logo-footer-two {
-  color: var(--primary-white-color);
   font-family: Raleway, cursive;
-  font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
+  letter-spacing: 0.03em;
+  font-weight: 700;
+  color: var(--primary-white-color);
 }
 
 .header {
@@ -148,17 +153,15 @@ textarea {
 .container > .header-nav {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .header > .container {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
-/* .main-nav {
-    display: flex;
-    align-items: center;
-} */
 .header-item {
   margin-right: 50px;
   display: block;
@@ -179,10 +182,10 @@ textarea {
 
 .header-link {
   color: var(--tittle-text-color);
-  font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  font-weight: 500;
   padding-top: 32px;
   padding-bottom: 32px;
   display: block;
@@ -197,12 +200,13 @@ textarea {
   color: var(--primary-text-color);
   padding-top: 32px;
   padding-bottom: 32px;
-  font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  font-weight: 500;
   display: flex;
   align-items: center;
+  justify-content: center;
   transition: color var(--animation);
 }
 
@@ -212,10 +216,10 @@ textarea {
 
 .header-link-current {
   color: var(--accent-color);
-  font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  font-weight: 500;
   padding-top: 32px;
   padding-bottom: 32px;
   display: block;
@@ -243,10 +247,10 @@ textarea {
 
 .hero-tittle {
   color: var(--primary-white-color);
-  font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
+  font-weight: 900;
   text-transform: uppercase;
   margin-top: 0px;
   margin-bottom: 30px;
@@ -275,9 +279,10 @@ textarea {
   background-color: var(--accent-color);
   color: var(--primary-white-color);
   font-family: inherit;
-  font-weight: bold;
   font-size: 16px;
-  line-height: 1.8;
+  line-height: 1.16;
+  letter-spacing: 0.06em;
+  font-weight: 700;
   cursor: pointer;
   border: 1px solid transparent;
   border-radius: 4px;
@@ -290,9 +295,10 @@ textarea {
 
 .persons-tittle {
   color: var(--tittle-text-color);
-  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
+  letter-spacing: 0.03em;
+  font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 10px;
 }
@@ -318,8 +324,8 @@ textarea {
   border-radius: 4px;
   margin-bottom: 30px;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 
 .persons-social-item + .persons-social-item {
@@ -342,10 +348,10 @@ textarea {
 .work-top-text {
   color: var(--primary-white-color);
   text-transform: uppercase;
-  font-weight: 700;
   font-size: 14px;
   line-height: 1.17;
-  letter-spacing: 0.03;
+  letter-spacing: 0.03em;
+  font-weight: 700;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -373,9 +379,10 @@ textarea {
 
 .command-people {
   color: var(--tittle-text-color);
-  font-weight: 500;
   font-size: 16px;
   line-height: 1.8;
+  letter-spacing: 0.03em;
+  font-weight: 500;
   text-align: center;
   margin-bottom: 10px;
 }
@@ -383,6 +390,8 @@ textarea {
 .command-special {
   font-size: 16px;
   line-height: 1.8;
+  letter-spacing: 0.03em;
+  font-weight: 400;
   text-align: center;
   margin-bottom: 16px;
 }
@@ -422,16 +431,17 @@ textarea {
   background-color: var(--accent-color);
 }
 
-.command-social-link:hover .command-social-icon, .command-social-link:focus .command-social-icon {
-  fill: var(--primary-white-color);
-}
-
 .command-social-item + .command-social-item {
   margin-left: 10px;
 }
 
 .command-social-icon {
   fill: currentColor;
+}
+
+.command-social-link:hover .command-social-icon,
+.command-social-link:focus .command-social-icon {
+  fill: var(--primary-white-color);
 }
 
 .client-social-item {
@@ -447,8 +457,8 @@ textarea {
   border: 1px solid var(--icon-color);
   border-radius: 4px;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   cursor: pointer;
   transition: background-color var(--animation), color var(--animation);
 }
@@ -459,14 +469,10 @@ textarea {
   background-color: var(--primary-white-color);
 }
 
-.client-social-link:hover .client-icon, .client-social-link:focus .client-icon {
-  fill: var(--accent-color);
-}
-
 .client-social-list {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 
 .client-social-item + .client-social-item {
@@ -479,8 +485,14 @@ textarea {
   fill: currentColor;
 }
 
+.client-social-link:hover .client-icon,
+.client-social-link:focus .client-icon {
+  fill: var(--accent-color);
+}
+
 .button {
   display: flex;
+  align-items: center;
   justify-content: center;
   margin-bottom: 50px;
 }
@@ -493,9 +505,10 @@ textarea {
   color: var(--tittle-text-color);
   background-color: var(--section-command-color);
   font-family: inherit;
-  font-weight: 500;
   font-size: 16px;
-  line-height: 1.6;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  font-weight: 500;
   cursor: pointer;
   padding: 6px 22px;
   display: inline-block;
@@ -510,9 +523,10 @@ textarea {
   background-color: var(--accent-color);
   color: var(--primary-white-color);
   font-family: inherit;
-  font-weight: 500;
   font-size: 16px;
-  line-height: 1.6;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  font-weight: 500;
   display: inline-block;
   padding: 6px 22px;
   border: 1px solid transparent;
@@ -526,9 +540,10 @@ textarea {
   background-color: var(--accent-color);
   color: var(--primary-white-color);
   font-family: inherit;
-  font-weight: 500;
   font-size: 16px;
-  line-height: 1.6;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  font-weight: 500;
   display: inline-block;
   padding: 6px 22px;
   border: 1px solid transparent;
@@ -556,7 +571,30 @@ textarea {
   box-shadow: 1px 4px 6px 0px #00000029,  0px 4px 4px 0px #0000000F, 0px 1px 1px 0px #0000001F;
 }
 
-.project-link:hover .project-top-text, .project-link:focus .project-top-text {
+.project-top-text {
+  position: absolute;
+  color: var(--primary-white-color);
+  font-size: 18px;
+  line-height: 1.55;
+  letter-spacing: 0.03em;
+  font-weight: 700;
+  padding-left: 24px;
+  padding-top: 63px;
+  padding-right: 24px;
+  padding-bottom: 63px;
+  background-color: var(--top-text);
+  width: 370px;
+  height: 294px;
+  transform: translateY(100%);
+  transition: transform var(--animation);
+  overflow: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.project-link:hover .project-top-text,
+.project-top-text .project-link:focus {
   transform: translateY(0);
 }
 
@@ -576,45 +614,24 @@ textarea {
 
 .project-tittle {
   color: var(--tittle-text-color);
-  font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  font-weight: 700;
 }
 
 .project-text {
-  font-weight: 400;
+  font-family: Raleway, cursive;
   font-size: 16px;
   line-height: 1.87;
-  font-family: Raleway, cursive;
   letter-spacing: 0.03em;
+  font-weight: 400;
   color: var(--primary-text-color);
 }
 
 .project-item-wrap {
   position: relative;
   overflow: hidden;
-}
-
-.project-top-text {
-  position: absolute;
-  color: var(--primary-white-color);
-  font-size: 18px;
-  line-height: 1.55;
-  letter-spacing: 0.03em;
-  padding-left: 24px;
-  padding-top: 63px;
-  padding-right: 24px;
-  padding-bottom: 63px;
-  background-color: var(--top-text);
-  width: 370px;
-  height: 294px;
-  transform: translateY(100%);
-  transition: transform var(--animation);
-  overflow: auto;
-  position: absolute;
-  top: 0;
-  left: 0;
 }
 
 .portfolio-card {
@@ -633,9 +650,10 @@ textarea {
 
 .address-list {
   color: var(--primary-white-color);
-  font-weight: normal;
   font-size: 14px;
   line-height: 1.7;
+  letter-spacing: 0.03em;
+  font-weight: 400;
   font-style: initial;
   margin-bottom: 0px;
 }
@@ -676,15 +694,15 @@ textarea {
   text-transform: uppercase;
   color: var(--primary-white-color);
   font-family: Roboto, sans-serif;
-  letter-spacing: 0.03em;
-  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
+  letter-spacing: 0.03em;
+  font-weight: 700;
 }
 
 .footer-social-list {
   display: flex;
-  text-align: center;
+  align-items: center;
   justify-content: center;
 }
 
@@ -709,15 +727,16 @@ textarea {
   background-color: var(--accent-color);
 }
 
-.footer-social-link:hover .footer-social-icon, .footer-social-link:focus .footer-social-icon {
-  fill: var(--primary-white-color);
-}
-
 .footer-social-item + .footer-social-item {
   margin-left: 10px;
 }
 
 .footer-social-icon {
+  fill: var(--primary-white-color);
+}
+
+.footer-social-link:hover .footer-social-icon,
+.footer-social-link:focus .footer-social-icon {
   fill: var(--primary-white-color);
 }
 
@@ -740,19 +759,20 @@ textarea {
   text-transform: uppercase;
   color: var(--primary-white-color);
   font-family: Roboto, sans-serif;
-  letter-spacing: 0.03em;
-  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
+  letter-spacing: 0.03em;
+  font-weight: 700;
 }
 
 .footer-form-email {
   width: 358px;
   height: 50px;
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
+  font-weight: 400;
   color: var(--footer-form-email-color);
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
@@ -769,6 +789,7 @@ textarea {
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
+  font-weight: 400;
   color: var(--footer-form-email-color);
 }
 
@@ -781,10 +802,10 @@ textarea {
   height: 50px;
   background-color: var(--accent-color);
   color: var(--primary-white-color);
-  font-weight: 700;
   font-size: 16px;
   line-height: 1.8;
   letter-spacing: 0.06em;
+  font-weight: 700;
   border-radius: 4px;
   border: 0;
   display: flex;
@@ -856,12 +877,12 @@ textarea {
 }
 
 .modal-tittle {
-  font-family: Roboto;
-  font-weight: 700;
+  font-family: Roboto, sans-serif;
   font-size: 20px;
   line-height: 1.15;
-  text-align: center;
   letter-spacing: 0.03em;
+  font-weight: 700;
+  text-align: center;
   margin-bottom: 12px;
   color: var(--tittle-text-color);
 }
@@ -906,8 +927,8 @@ textarea {
 .input-icon {
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
   left: 12px;
+  transform: translateY(-50%);
   transition: fill var(--animation);
 }
 
@@ -941,19 +962,20 @@ textarea {
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
+  font-weight: 400;
   color: rgba(117, 117, 117, 0.5);
 }
 
 .modal-check-text {
-  font-family: Roboto;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.7;
-  letter-spacing: 0.03em;
+  font-family: Roboto,sans-serif;
   text-align: left;
+  font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  font-weight: 400;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 
 .modal-check-text span {
@@ -1001,11 +1023,11 @@ textarea {
   border-radius: 4px;
   border: 1px solid var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  font-family: Roboto;
-  font-weight: 700;
-  font-size: 16px;
+  font-family: Roboto, sans-serif;
+  font-size: 66px;
   line-height: 1.87;
   letter-spacing: 0.06em;
+  font-weight: 700;
   transition: background var(--animation);
 }
 

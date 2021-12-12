@@ -20,7 +20,7 @@
     position: absolute;
     color: var(--primary-white-color);
 
-    @include font (18px, 1.55, 0.03em);
+    @include font (18px, 1.55, 0.03em, 700);
     padding-left: 24px;
     padding-top: 63px;
     padding-right: 24px;

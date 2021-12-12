@@ -2,10 +2,10 @@
     border: 1px solid var(--header-border-color);
 }
 .container>.header-nav {
-    @include flex (flex, center);
+    @include flex (flex, center, center);
 }
 .header>.container {
-    @include flex (flex, center);
+    @include flex (flex, center, center);
 }
 .header-item {
     margin-right: 50px;

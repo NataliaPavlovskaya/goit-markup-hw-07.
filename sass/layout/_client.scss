@@ -33,7 +33,7 @@
     height: 60px;
     fill: currentColor; 
     .client-social-link:hover &,
-    .client-social-link:hover& {
+    .client-social-link:focus & {
         fill: var(--accent-color); 
     }
 }

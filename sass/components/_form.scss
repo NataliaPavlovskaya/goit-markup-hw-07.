@@ -78,12 +78,15 @@
         @include flex (flex, center, center);
         margin-bottom: 0;
         transition: border-color var(--animation);
-        &:hover,
-        &:focus {
-    border-color: var(--accent-color);
-        }
     } 
 }
+// .modal-check-text:hover,
+// .modal-check-text:focus{
+//     span {
+//         border-color: var(--accent-color);
+//     }
+    
+// }
 .check-icon{
     fill: var(--primary-white-color);
 }
@@ -93,6 +96,10 @@
         border: none;
     } 
 }
+.modal-check:focus {
+        border-color: var(--accent-color);
+}
+
 .form-checkbox-policy {
     margin-bottom: 30px;
 }
@@ -118,8 +125,6 @@
     &:hover,
     &:focus{
     background: var(--footer-form-btn-hover);
-    /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px; */
     }
 }
 

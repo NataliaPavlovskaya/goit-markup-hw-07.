@@ -586,7 +586,7 @@ textarea {
   font-size: 18px;
   line-height: 1.55;
   letter-spacing: 0.03em;
-  font-weight: 700;
+  font-weight: 400;
   padding-left: 24px;
   padding-top: 63px;
   padding-right: 24px;
@@ -603,7 +603,7 @@ textarea {
 }
 
 .project-link:hover .project-top-text,
-.project-top-text .project-link:focus {
+.project-link:focus .project-top-text {
   transform: translateY(0);
 }
 
@@ -1000,7 +1000,8 @@ textarea {
   transition: border-color var(--animation);
 }
 
-.modal-check-text span:hover, .modal-check-text span:focus {
+.modal-check-text:hover span,
+.modal-check-text:focus span {
   border-color: var(--accent-color);
 }
 
@@ -1011,6 +1012,10 @@ textarea {
 .modal-check:checked + .modal-check-text span {
   background-color: var(--accent-color);
   border: none;
+}
+
+.modal-check:focus {
+  border-color: var(--accent-color);
 }
 
 .form-checkbox-policy {
@@ -1043,8 +1048,6 @@ textarea {
 
 .form-btn:hover, .form-btn:focus {
   background: var(--footer-form-btn-hover);
-  /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px; */
 }
 
 /* .modal-check-text::before{

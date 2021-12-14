@@ -9,7 +9,7 @@
     font-style: inherit;
     transition: box-shadow var(--animation);  
     &:hover,
-    &:focus {
+    &:focus{
     cursor: pointer;
     box-shadow: 1px 4px 6px 0px #00000029, 
     0px 4px 4px 0px #0000000F,
@@ -20,7 +20,7 @@
     position: absolute;
     color: var(--primary-white-color);
 
-    @include font (18px, 1.55, 0.03em, 700);
+    @include font (18px, 1.55, 0.03em, 400);
     padding-left: 24px;
     padding-top: 63px;
     padding-right: 24px;
@@ -36,7 +36,7 @@
     top: 0;
     left: 0;  
     .project-link:hover &,
-    .project-link:focus {
+    .project-link:focus & {
         transform: translateY(0);
     } 
 }

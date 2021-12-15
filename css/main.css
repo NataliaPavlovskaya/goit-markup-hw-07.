@@ -1014,7 +1014,7 @@ textarea {
   border: none;
 }
 
-.modal-check:focus {
+.modal-check:focus + .modal-check-text span {
   border-color: var(--accent-color);
 }
 

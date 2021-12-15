@@ -80,13 +80,12 @@
         transition: border-color var(--animation);
     } 
 }
-// .modal-check-text:hover,
-// .modal-check-text:focus{
-//     span {
-//         border-color: var(--accent-color);
-//     }
-    
-// }
+.modal-check-text:hover,
+.modal-check-text:focus{
+    span {
+        border-color: var(--accent-color);
+    }  
+}
 .check-icon{
     fill: var(--primary-white-color);
 }
@@ -96,10 +95,9 @@
         border: none;
     } 
 }
-.modal-check:focus {
-        border-color: var(--accent-color);
+.modal-check:focus + .modal-check-text span{
+    border-color: var(--accent-color);
 }
-
 .form-checkbox-policy {
     margin-bottom: 30px;
 }
